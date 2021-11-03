@@ -1,4 +1,7 @@
+" Show line numbers
 set number
+
+" Syntax highlighting
 filetype plugin on
 syntax on
 
