@@ -2,6 +2,8 @@ window:
   # No titlebar
   decorations: None
 
+  opacity: 0.8
+
   dimensions:
     columns: 100
     lines: 30
@@ -70,7 +72,6 @@ colors:
     cyan:    '0x59dffc'
     white:   '0xe6e6d1'
 
-background_opacity: 0.8
 
 font:
   normal:
