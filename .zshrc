@@ -32,13 +32,51 @@ alias cl="colorls --dark -lah"
 # Functions
 subgrab() {
     if [[ -z $1 ]]; then 
-        echo "Must provide a url, exiting."
-        exit
+        echo "Must provide a url as first argument"
+        return
     fi
-    mkdir temp && cd temp;
-    wget -O subs.zip $1;
-    unzip subs.zip;
     
+    if [[ -z $2 ]]; then
+        echo "Must provide language code as second argument"
+        return
+    fi
+    
+    mkdir temp && cd temp
+    wget -O subs.zip $1
+    unzip subs.zip && rm subs.zip
+    subfile=""
+    
+    for file in *
+    do
+        if [[ ${file##*.} == "srt" ]]; then
+            subfile=$file
+            mv $file ..
+        else
+            rm $file
+        fi
+    done
+
+    cd .. 
+    rmdir temp
+
+    echo "subfile ${subfile}"
+    if [[ -z $subfile ]]; then
+        echo "Coudn't find sub file (.srt)"
+        return
+    fi
+    
+    for file in *
+        case ${file##*.} in
+            mp4 | mkv)
+                echo "found ${file}\nnaming subs with same name"
+                mv $subfile ${file%.*}.$2.srt
+                echo "Done"
+                return
+                ;;
+        esac
+    echo "Coudn't find video file, cleaning up..."
+    rm $subfile
+    return
 }
 
 source $ZSH/oh-my-zsh.sh
