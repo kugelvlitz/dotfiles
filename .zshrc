@@ -25,11 +25,15 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 # Aliases
-alias mkcd='source mkcd'
 alias c='clear'
 alias cl="colorls --dark -lah"
 
 # Functions
+
+mkcd() {
+    mkdir $1 && cd $1
+}
+
 subgrab() {
     if [[ -z $1 ]]; then 
         echo "Must provide a url as first argument"
