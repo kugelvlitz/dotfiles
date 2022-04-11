@@ -46,7 +46,7 @@ subgrab() {
     fi
     
     mkdir temp && cd temp
-    wget -O subs.zip $1
+    wget --no-verbose --show-progress -O subs.zip $1
     unzip subs.zip && rm subs.zip
     subfile=""
     
