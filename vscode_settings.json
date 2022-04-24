@@ -27,5 +27,6 @@
     },
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
-    "editor.smoothScrolling": true
+    "editor.smoothScrolling": true,
+    "window.titleBarStyle": "custom"
 }
