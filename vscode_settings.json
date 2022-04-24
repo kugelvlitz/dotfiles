@@ -1,0 +1,31 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "\"Fira Code\"",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontLigatures": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "denticard-db",
+            "database": "denticard",
+            "username": "postgres"
+        }
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true
+}
