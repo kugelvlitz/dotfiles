@@ -26,7 +26,7 @@ fi
 
 # Aliases
 alias c='clear'
-alias cl="colorls --dark -lah"
+alias cl="exa -lah --icons"
 
 # Functions
 
