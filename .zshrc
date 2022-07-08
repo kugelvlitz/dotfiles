@@ -10,7 +10,6 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git)
 
 
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
@@ -86,6 +85,7 @@ subgrab() {
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval "$(zoxide init zsh)"
 
 # Dracula Theme (for zsh-syntax-highlighting)
 #

@@ -1,6 +1,7 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
-    "editor.fontSize": 15,
+    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+    "editor.fontSize": 14,
+    "window.zoomLevel": 1,
     "editor.fontFamily": "\"Fira Code\"",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontLigatures": true,
@@ -28,5 +29,9 @@
     "editor.cursorSmoothCaretAnimation": true,
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "window.menuBarVisibility": "compact",
+    "fountain.general.parentheticalNewLineHelper": false
 }
