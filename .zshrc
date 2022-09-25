@@ -29,6 +29,17 @@ alias cl="exa -lah --icons"
 
 # Functions
 
+recovery-pacman() {
+    sudo pacman "$@"  \
+    --log /dev/null   \
+    --noscriptlet     \
+    --dbonly          \
+    --overwrite "*"   \
+    --nodeps          \
+    --needed
+}
+
+
 mkcd() {
     mkdir $1 && cd $1
 }
