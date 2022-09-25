@@ -32,9 +32,16 @@
     "window.titleBarStyle": "custom",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
+<<<<<<< HEAD
     "window.menuBarVisibility": "compact",
     "fountain.general.parentheticalNewLineHelper": false,
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+=======
+    "fountain.general.parentheticalNewLineHelper": false,
+    "window.menuBarVisibility": "compact",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+>>>>>>> 852e1a2 (minor changes)
     }
 }
