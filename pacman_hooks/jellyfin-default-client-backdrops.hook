@@ -1,0 +1,13 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = jellyfin-bin
+Target = jellyfin-web-bin
+
+[Action]
+Description = Enabling backdrops by default on jellyfin web.
+Depends = sed
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/enableBackdrops:function(){return P}/enableBackdrops:function(){return _}/g' /usr/share/jellyfin/web/main.jellyfin.bundle.js 
+
