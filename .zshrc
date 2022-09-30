@@ -27,6 +27,8 @@ fi
 alias c='clear'
 alias cl="exa -lah --icons"
 alias tree="exa --tree --icons"
+alias soto=man
+
 # Functions
 
 recovery-pacman() {
