@@ -1,3 +1,5 @@
+lua require("nvim-tree-setup")
+
 " Show line numbers
 set number
 
