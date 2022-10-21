@@ -46,6 +46,12 @@ mkcd() {
     mkdir $1 && cd $1
 }
 
+# Enable/Disable switching to a window from another workspace in gnome
+# true | false
+gswitch() {
+    gsettings set org.gnome.shell.app-switcher current-workspace-only $1
+}
+
 subgrab() {
     if [[ -z $1 ]]; then 
         echo "Must provide a url as first argument"
