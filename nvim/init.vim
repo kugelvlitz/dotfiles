@@ -1,4 +1,4 @@
-lua require("nvim-tree-setup")
+" lua require("nvim-tree-setup")
 
 " Show line numbers
 set number
@@ -14,3 +14,6 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+set spell
+:set spelllang=en_us
