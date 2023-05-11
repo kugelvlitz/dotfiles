@@ -13,6 +13,7 @@ plugins=(git)
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
+   export TERM=xterm-256color
  else
    export EDITOR='vi'
  fi
@@ -100,6 +101,11 @@ subgrab() {
     rm $subfile
     return
 }
+
+# Firefox wayland compatibility
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
