@@ -26,22 +26,16 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,
     "window.titleBarStyle": "custom",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-<<<<<<< HEAD
-    "window.menuBarVisibility": "compact",
-    "fountain.general.parentheticalNewLineHelper": false,
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-=======
     "fountain.general.parentheticalNewLineHelper": false,
     "window.menuBarVisibility": "compact",
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
->>>>>>> 852e1a2 (minor changes)
-    }
+    },
+    "arduino.useArduinoCli": true
 }
