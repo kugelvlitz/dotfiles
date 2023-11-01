@@ -113,6 +113,8 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(zoxide init zsh)"
 
+export EDITOR=nvim
+
 # Dracula Theme (for zsh-syntax-highlighting)
 #
 # https://github.com/zenorocha/dracula-theme
@@ -204,3 +206,5 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[default]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[cursor]='FFFFFF'
+
+export QSYS_ROOTDIR="/home/david/.cache/paru/clone/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
