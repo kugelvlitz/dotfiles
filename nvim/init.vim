@@ -5,7 +5,7 @@ set number
 
 " Syntax highlighting
 filetype plugin on
-syntax on
+" syntax on
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -15,5 +15,5 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-set spell
+" set spell
 :set spelllang=en_us
