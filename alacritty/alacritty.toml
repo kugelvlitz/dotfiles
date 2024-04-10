@@ -1,0 +1,23 @@
+import = ["themes/dracula.toml"]
+
+[font]
+size = 14
+
+[font.normal]
+family = "FiraCode"
+
+[window]
+decorations = "None"
+opacity = 0.7
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.padding]
+x = 15
+y = 15
+
+[window.position]
+x = 322
+y = 100
