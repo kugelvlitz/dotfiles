@@ -29,6 +29,7 @@ alias c='clear'
 alias cl="exa -lah --icons"
 alias tree="exa --tree --icons"
 alias soto=man
+alias shaderlog="tail -f ~/.steam/root/logs/shader_log.txt"
 
 # Functions
 
