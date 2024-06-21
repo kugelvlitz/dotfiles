@@ -1,1 +1,4 @@
 theme = "bogster"
+
+[editor.soft-wrap]
+enable = true
