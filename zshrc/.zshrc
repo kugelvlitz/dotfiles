@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # NodeJS version manager
 source /usr/share/nvm/init-nvm.sh
 
