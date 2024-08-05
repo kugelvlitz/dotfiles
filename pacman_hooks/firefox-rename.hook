@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = firefox
+
+[Action]
+Description = Rename desktop entry for cleanliness. 
+Depends = sed
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Name=Firefox Web Browser/Name=Firefox/g' /usr/share/applications/firefox.desktop
+
