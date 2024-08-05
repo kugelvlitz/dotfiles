@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = steam
+
+[Action]
+Description = Rename desktop entry for cleanliness. 
+Depends = sed
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Name=Steam (Runtime)/Name=Steam/g' /usr/share/applications/steam.desktop
+
