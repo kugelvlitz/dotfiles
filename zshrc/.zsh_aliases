@@ -6,3 +6,4 @@ alias soto=man
 alias shaderlog="tail -f ~/.steam/root/logs/shader_log.txt"
 alias bakkes="protontricks-launch --appid 252950 '~/.steam/steam/steamapps/compatdata/252950/pfx/drive_c/Program Files/BakkesMod/BakkesMod.exe'"
 alias nukeparucache="sudo rm -r /var/cache/pacman/pkg/* || sudo rm -r ~/.cache/paru/clone/*"
+alias hx="helix"
