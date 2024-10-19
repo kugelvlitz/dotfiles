@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = spotify-launcher
+
+[Action]
+Description = Rename desktop entry for cleanliness. 
+Depends = sed
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Name=Spotify (Launcher)/Name=Spotify/g' /usr/share/applications/spotify-launcher.desktop
+

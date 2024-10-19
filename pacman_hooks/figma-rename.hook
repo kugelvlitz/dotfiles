@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = figma-linux-bin
+
+[Action]
+Description = Rename desktop entry for cleanliness. 
+Depends = sed
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Name=Figma Linux/Name=Figma/g' /usr/share/applications/figma-linux.desktop
+
