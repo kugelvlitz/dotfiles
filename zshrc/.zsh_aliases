@@ -7,4 +7,7 @@ alias shaderlog="tail -f ~/.steam/root/logs/shader_log.txt"
 alias bakkes="protontricks-launch --appid 252950 '~/.steam/steam/steamapps/compatdata/252950/pfx/drive_c/Program Files/BakkesMod/BakkesMod.exe'"
 alias nukeparucache="sudo rm -r /var/cache/pacman/pkg/*; sudo rm -r $HOME/.cache/paru/clone/*"
 alias hx="helix"
-alias largest="du -a /var | sort -n -r | head -n 10"
+alias largest="du -a . | sort -n -r | head -n 10"
+if (( $+commands[prettier] )) && (( $+commands[prettybat] )) then
+	alias bat=prettybat
+fi

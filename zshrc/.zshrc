@@ -39,3 +39,5 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 eval "$(zoxide init zsh)"
+
+cowsay -f surgery 'Do some cowboy shit'

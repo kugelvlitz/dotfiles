@@ -13,6 +13,38 @@ mkcd() {
     mkdir $1 && cd $1
 }
 
+aperture() {
+
+    if [[ -z "$ALACRITTY_SOCKET" ]]; then
+        echo "Error: not running inside Alacritty (ALACRITTY_SOCKET not set)"
+        return 1
+    fi
+
+    if [[ -z "$1" ]]; then
+        echo 'This functions changes alacritty opcity value\nPlease provide a value between <0, 1>'
+        return 1
+    fi
+
+    local val="$1"
+
+    # --- Validate numeric format ---
+    if ! [[ "$val" =~ '^[0-9]*\.?[0-9]+$' ]]; then
+        echo "Error: '$val' is not a valid number"
+        return 1
+    fi
+
+    # --- Convert to float (zsh native) ---
+    local -F num="$val"
+
+    # --- Validate range ---
+    if (( num < 0 || num > 1 )); then
+        echo "Error: value must be between 0 and 1"
+        return 1
+    fi
+    
+    alacritty msg config window.opacity="$num"
+}
+
 # Enable/Disable switching to a window from another workspace in gnome
 gswitch() {
     gsettings set org.gnome.shell.app-switcher current-workspace-only $1
