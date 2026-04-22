@@ -8,5 +8,5 @@ Target = spotify-launcher
 Description = Rename desktop entry for cleanliness. 
 Depends = sed
 When = PostTransaction
-Exec = /usr/bin/sed -i 's/Name=Spotify (Launcher)/Name=Spotify/g' /usr/share/applications/spotify-launcher.desktop
+Exec = /usr/bin/sed -i -e 's/Name=Spotify (Launcher)/Name=Spotify/g' -e 's/Icon=spotify-launcher/Icon=spotify/g' /usr/share/applications/spotify-launcher.desktop
 
