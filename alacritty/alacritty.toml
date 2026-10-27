@@ -8,6 +8,7 @@ family = "FiraCode"
 [window]
 decorations = "None"
 opacity = 0.7
+class = { general = "Alacritty", instance = "Alacritty" }
 
 [window.dimensions]
 columns = 100
